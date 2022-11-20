@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar{
+    margin: 0;
+    padding: 13px;
+    width: 90%;
+}
+img{
+    margin-left: 3px;
+    margin-right: 6px;
+    width: 98%;
+    border-radius: 10px;
+}
+.icon{
+    margin-left: auto;
+    width: 30px;
+    display: flex;
+    align-items:flex-start ;
+    justify-content: end;
+}
+.sub-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+input{
+    width: 100%;
+    height: 32px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.iconos{
+    transform: translateY(-25px);
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+::placeholder{
+    transform: translateX(30px);
+
+}
+.noticias{
+    display: block;
+    top: 50px;
+}
+.panel{
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.panel h1{
+    width: -800px;
+    margin-left: 20px;
+}
+.panel p{
+    margin-left: 20px;
+}
+.nav-link:hover{
+    color: black;
+}
+@media screen and (min-width:360px){
+    
+    .icon{
+        margin-left: 335px;
+    }
+
+    input{
+        width: 340px;
+    }
+    .bx-search{
+        left: 20px;    
+    }
+    
+    .bxs-microphone{
+        margin-left: 250px;
+        left: 12px;
+    }
+    .bx-camera{
+        left: 12px;
+    }
+}
+

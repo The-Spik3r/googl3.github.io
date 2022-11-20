@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <a href="#"><img src="img/Perfil.png" class="icon"></a>
+            </nav>
+        </div>
+        <div class="sub-nav">
+            <img src="img/google.png" class="logo">
+        </div>
+    </header>
+    <main>
+        <div class="search">
+            <div class="entrada">
+                <input type="text" placeholder="Buscar..." >
+                <div class="iconos">
+                    <a href=""><i class='bx bx-search'></i></a>
+                    <a href=""><i class='bx bxs-microphone bx-flip-horizontal'></i></a>
+                    <a href=""><i class='bx bx-camera'></i></a>
+                </div>
+            </div>     
+        </div>
+        <div class="noticias">
+            <div class="panel">
+                <img src="img/img1.jpg" alt="">
+                <h1>Gibson y sus mejores Guitarras</h1>
+                <p><i class='bx bx-image-alt' ></i>guitarra easy</p>
+            </div>
+            <div class="panel">
+                <img src="img/img2.jpg" alt="">
+                <h1>¿Fender en problemas?</h1>
+                <p><i class='bx bx-image-alt' ></i>Fiufe</p>
+            </div>
+            <div class="panel">
+                <img src="img/img3.jpg" alt="">
+                <h1>3 Juegos Gratruitos en Steam</h1>
+                <p><i class='bx bx-image-alt' ></i>gamerARK</p>
+            </div>
+
+            <div class="panel">
+                <img src="img/img4.jpg" alt="">
+                <h1>2020: Mejor BMW</h1>
+                <p><i class='bx bx-image-alt'></i>autosonline</p>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>Descubre</li>
+                <li>Buscar</li>
+                <li>Colecciones</li>
+            </ul>
+        </nav>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
